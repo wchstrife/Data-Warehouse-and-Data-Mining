@@ -1,0 +1,150 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1712755a-70dc-4ec8-818d-5a5125250c33" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Disp</ID>
+  <Name>Fact Disp</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="badfffd3-d816-4a7a-a65d-7b423cc5f8ac">
+    <DataSourceViewID>Homework</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="7e331df8-f2af-49c5-b4fc-bb746002bd91">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="647b6932-373b-4b7a-bd67-6fbb10bf38f7">
+      <ID>Account Id</ID>
+      <Name>Account Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="db9388cb-6652-479e-bff4-c584e9c7ff02">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cd11f98f-f0ec-441e-b96c-3508b166d25c">
+            <TableID>dbo_fact_disp</TableID>
+            <ColumnID>account_id</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d562072e-af63-4947-8b7b-b4383f188708">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13a46f85-6ad5-4587-9592-3e3665c3a997">
+            <TableID>dbo_fact_disp</TableID>
+            <ColumnID>client_id</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2df5e34b-64dd-4c1b-8dab-d24f68ee7868">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="74baf872-6670-45c1-99ee-13f4edba00c9">
+            <TableID>dbo_fact_disp</TableID>
+            <ColumnID>card_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0079fff7-eec2-4383-956d-0ed7e8d18187">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="45c683af-9fa2-4c5c-bd8c-90d6e8d72931">
+          <TableID>dbo_fact_disp</TableID>
+          <ColumnID>account_id</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="616ea813-3e30-47c2-a6d5-412bd5d8554b">
+          <AttributeID>Fact Disp - Account Id</AttributeID>
+          <Name>Fact Disp - Account Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0fd1d2e5-0397-44d9-8ae7-5fe439311e0d">
+          <AttributeID>Client Id</AttributeID>
+          <Name>Client Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c03f64d5-4071-4ee0-851e-8f6feb657a3f">
+          <AttributeID>Card Id</AttributeID>
+          <Name>Card Id</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+    </Attribute>
+    <Attribute dwd:design-time-name="98587d02-8ce9-4b57-9ee4-5ccef3828f40">
+      <ID>Fact Disp - Account Id</ID>
+      <Name>Fact Disp - Account Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dd337891-5193-4fc9-ab84-b6684f496ada">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3da43435-da7b-4fdd-8de1-d060fe595021">
+            <TableID>dbo_fact_disp</TableID>
+            <ColumnID>account_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="559dfc22-fb20-4618-a043-36c7cc16cd45">
+      <ID>Client Id</ID>
+      <Name>Client Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="802035e2-f638-48c8-a71b-f64b2c554a3c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f121f5b3-e9c6-408c-a357-f81f9ada3cc8">
+            <TableID>dbo_fact_disp</TableID>
+            <ColumnID>client_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="f1ac3307-0e06-4d1c-a6bd-2e4fc44243fd">
+      <ID>Card Id</ID>
+      <Name>Card Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d80f6294-7bc2-41c2-b697-22cb4f6c0a99">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9f101ba-7179-4747-8ef7-b778cd9ab528">
+            <TableID>dbo_fact_disp</TableID>
+            <ColumnID>card_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+  </Attributes>
+</Dimension>

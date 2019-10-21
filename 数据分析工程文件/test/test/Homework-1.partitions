@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="70fbf243-6720-4991-ab64-c6d3ed5054ee" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Homework</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Disp</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0f8baa20-8932-462a-8eb1-0949c0deee41">
+          <ID>Fact Disp</ID>
+          <Name>Fact Disp</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="14e0b127-4847-4518-8df8-06fcbba8f5cf">
+            <DataSourceViewID>Homework</DataSourceViewID>
+            <TableID>dbo_fact_disp</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dimemsion Card</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3749bcba-3629-4f03-8fd2-2baeb17faa4c">
+          <ID>Dimemsion Card</ID>
+          <Name>Dimemsion Card</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="167f20f6-c010-4e18-9da2-9a6b743efb26">
+            <DataSourceViewID>Homework</DataSourceViewID>
+            <TableID>dbo_dimemsion_card</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dimemsion Client</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4fc456bb-4f69-464c-b773-83939faf39b5">
+          <ID>Dimemsion Client</ID>
+          <Name>Dimemsion Client</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a43cecf7-bf6b-4bad-91dc-d8632a52f86b">
+            <DataSourceViewID>Homework</DataSourceViewID>
+            <TableID>dbo_dimemsion_client</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dimension Account</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="57f9df21-8b26-406f-9c79-eb50abd17e2e">
+          <ID>Dimension Account</ID>
+          <Name>Dimension Account</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dd90ec11-63c6-4361-841e-53bfe5dbf2e8">
+            <DataSourceViewID>Homework</DataSourceViewID>
+            <TableID>dbo_dimension_account</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

@@ -1,0 +1,138 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>test</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>UgzQ/vuq/yvsEtVQk4gnRg==2019/10/21 17:02:552019/10/21 16:32:59</TimeStamp>
+        <ID>
+          <String>Homework</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>CHRtblSxLQWPg+RSrF5hqA==2019/10/21 16:55:272019/10/21 16:34:28</TimeStamp>
+        <ID>
+          <String>Homework</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fkLyUWlxgxpuv2IsXHvong==2019/10/21 18:10:122019/10/21 18:04:20</TimeStamp>
+        <ID>
+          <String>Dimension Account</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xBiuyZuaeLhEVzawJevv1w==2019/10/21 18:21:052019/10/21 18:04:20</TimeStamp>
+        <ID>
+          <String>Dimemsion Client</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>eiZS4APFnbfhN/L2dKfH4Q==2019/10/21 19:59:482019/10/21 18:04:20</TimeStamp>
+        <ID>
+          <String>Dimemsion Card</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wc+SrdZtqx8cKXsWx8ZUHQ==2019/10/21 18:10:122019/10/21 18:04:20</TimeStamp>
+        <ID>
+          <String>Fact Disp</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>YMXU40G1RkR0U7oTblCXaQ==2019/10/21 18:21:052019/10/21 18:10:12</TimeStamp>
+        <ID>
+          <String>Card Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2/QXI5XLCpqFhB9OHxn6VA==2019/10/21 18:21:052019/10/21 18:10:12</TimeStamp>
+        <ID>
+          <String>Client Gender</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>uOMTOQ55+mUmq2Bz/ReyCA==2019/10/21 18:21:052019/10/21 18:10:12</TimeStamp>
+        <ID>
+          <String>District</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>AI1BxI6Ag1dxDK2rlryKWA==2019/10/21 18:21:052019/10/21 18:12:57</TimeStamp>
+        <ID>
+          <String>Fact Loan</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JhTLAfDscNGEPRghujT/Hw==2019/10/21 19:59:322019/10/21 19:52:57</TimeStamp>
+        <ID>
+          <String>Tran Operation</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>T3accXfbEagP6+1sde6/9g==2019/10/21 19:59:322019/10/21 19:52:57</TimeStamp>
+        <ID>
+          <String>Fact Tran</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>7Z1g/6qEARHLUmMRXzx+rA==2019/10/21 19:59:482019/10/21 18:05:49CKMfGM9qobuA9dZIeXYRpQ==2019/10/21 18:10:122019/10/21 18:05:49</TimeStamp>
+        <ID>
+          <String>Homework</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>72HwbUIvmYZXZr4YufcoQA==2019/10/21 19:52:572019/10/21 18:14:364AQUuNbePUqH2RKcjpYvbg==2019/10/21 18:14:362019/10/21 18:14:36</TimeStamp>
+        <ID>
+          <String>Homework 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>5RVlFYEpC+A0hY1CORRcbQ==2019/10/21 19:59:482019/10/21 19:52:57yFJ7VGWQLmpB67HNDSRLWA==2019/10/21 19:52:572019/10/21 19:52:57</TimeStamp>
+        <ID>
+          <String>Homework 2</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>ZMyJ/tD/WN+8lx11AuaCRA==2019/10/21 16:24:162019/10/21 16:24:16</TimeStamp>
+      <ID>
+        <String>test</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2019-10-21T11:59:53Z</LastDeployed>
+</DeploymentSnapshot>
